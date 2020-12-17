@@ -11,8 +11,15 @@ public class Exm{
 
 class Main{
 public static void main(String[] args){
-    Exm b = new Exm();
-    b.count();
+    try{
+        Exm b = new Exm();
+        b.count();
+    }
+    catch(NullPointerException e){
+        System.out.println("Nullが含まれている！");
+        System.out.println(e.getMessage());
+
+    }
 }
 }
 
