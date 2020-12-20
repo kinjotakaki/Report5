@@ -1,25 +1,17 @@
 package jp.ac.uryukyu.ie.kinjotakaki;
 
 public class Exm{
-    String str = null;
-    int a;
+    String str = "百二十三";
+    int value;
     public void count(){
-        this.a = str.length();
-        System.out.println(a);
+        this.value = Integer.parseInt(str);
     }
 }
 
 class Main{
 public static void main(String[] args){
-    try{
-        Exm b = new Exm();
-        b.count();
-    }
-    catch(NullPointerException e){
-        System.out.println("Nullが含まれている！");
-        System.out.println(e.getMessage());
-
-    }
+    Exm a = new Exm();
+    a.count();
 }
 }
 
